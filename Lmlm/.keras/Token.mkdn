@@ -1,0 +1,78 @@
+>>how do I pass the embedding layer into the model so that its parameters are included in the model?”, it works like this:
+```py
+import tensorflow as tf
+from tensorflow.keras import layers
+# 1. Define your vocabulary
+vocab_size = 100_000
+# 2. Define embedding size
+embedding_dim = 4096
+# 3. Create the input
+input_ids = tf.keras.Input(
+    shape=(None,),
+    dtype=tf.int32,
+    name="input_ids"
+)
+# 4. Create the embedding layer
+embeddings = layers.Embedding(
+    input_dim=vocab_size,
+    output_dim=embedding_dim,
+    name="token_embedding"
+)(input_ids)
+# 5. Continue your model
+x = embeddings
+# Example transformer/model layers would go here
+x = layers.Dense(4096, activation="gelu")(x)
+# 6. Create the model
+model = tf.keras.Model(
+    inputs=input_ids,
+    outputs=x,
+    name="LMLM"
+)
+# 7. Build it
+model(tf.zeros((1, 10), dtype=tf.int32))
+# 8. See parameter count
+model.summary()
+
+The important part is this:
+
+layers.Embedding(
+    input_dim=vocab_size,
+    output_dim=embedding_dim
+)
+```
+
+# That creates the actual embedding weights:
+```tts
+100,000 × 4,096
+= 409,600,000 parameters
+
+Those 409.6M parameters automatically become part of model.count_params().
+```
+* So you don’t do:
+```
+model.parameters = 5_104_298_467  # ❌
+
+Instead:
+
+embedding → transformer layers → output
+                    ↓
+                  model
+                    ↓
+             count_params()
+
+```
+building  LMLM
+
+If your goal is to have something like:
+
+LMLM-5.1B
+├── Tokenizer
+├── Embedding
+├── Transformer blocks
+├── Normalization
+├── Output head
+└── 5,104,298,467 total parameters
+
+then the embedding must be instantiated inside the model before you call model.summary().
+
+If you show me your current LMLM model code, especially the part where you create the tokenizer/embedding and transformer, I can show you exactly where to insert it and how to make the 5.104B count match.
