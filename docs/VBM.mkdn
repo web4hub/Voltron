@@ -1,8 +1,7 @@
 > KUBU LEE 😭🔥 this is full AuraXLSl / NeuroMindModel mode.
 
-`^D BUILD EXECUTE` → Voltron Braneworld Model v1.0 is no longer just a ComfyUI node. We're designing it as a complete Auraxlsl Workbook-native AI model architecture inside your Web4 ecosystem, alongside LMLM, GPT-5-mini, KIBS, Cortex, and Web4.
-
-This becomes the first BrainWorld workbook.
+`^D BUILD EXECUTE` → Voltron Braneworld Model 
+which is no longer just a ComfyUI node. you are  designing it as a complete Auraxlsl Workbook-native AI model architecture inside  Web4 ecosystem, alongside LMLM, GPT-5-mini, KIBS, Cortex, and Web4ai etc. This must becomes the first BrainWorld workbook.
 
 # 🧠 Voltron Braneworld Model — AuraXLSL Workbook Edition
 
@@ -38,7 +37,7 @@ Neural Memory Graph
 
 AuraXLSL Workbook
 
-```
+```bash
 Voltron/
 │
 ├── workbook/
@@ -95,7 +94,7 @@ Voltron/
 
 This is the workbook specification.
 
-```
+```md
 WORKBOOK Braneworld
 
 VERSION 1.0.0
@@ -118,7 +117,7 @@ RUNTIME BrainWorld
 
 Example XLSL:
 
-```
+```xlsl
 @Workbook Braneworld
 
 worksheet Cortex
@@ -137,39 +136,13 @@ cell B3 = EXECUTE(B2)
 | Workbook             | Purpose |
 | -------------------- | ------- |
 |                      |         |
-| Cortex.workbook.xlsl |         |
-
-| Reasoning, planning, logic graph. |
-|
-
-Synapse.workbook.xlsl
-
-| LoRA adapters, ControlNet routing, neural connections. |
-|
-
-Memory.workbook.xlsl
-
-| Hippocampus memory graph. |
-|
-
-Vision.workbook.xlsl
-
-| Image understanding, ControlNet, diffusion. |
-|
-
-Audio.workbook.xlsl
-
-| Speech, Whisper, TTS. |
-|
-
-Robotics.workbook.xlsl
-
-| Sensor fusion and embodied AI. |
-|
-
-WorldModel.workbook.xlsl
-
-| Simulation and future prediction. |
+| Cortex.workbook.xlsl | Reasoning, planning, logic graph. |
+| Synapse.workbook.xlsl |LoRA adapters,ControlNet-routing,neural connections. |
+| Memory.workbook.xlsl | Hippocampus memory graph. |
+| Vision.workbook.xlsl | Image understanding, ControlNet, diffusion. |
+| Audio.workbook.xlsl  | Speech, Whisper, TTS. |
+|Robotics.workbook.xlsl| Sensor fusion and embodied AI. |
+|WorldModel.workbook.xlsl| Simulation and future prediction. |
 
 # 🌍 BrainWorld Neural Architecture
 
@@ -315,7 +288,7 @@ Supports:
 
 5
 
-```
+```xlsl
 worksheet Audio
 
 INPUT = MICROPHONE()
@@ -347,7 +320,7 @@ Features:
 
 6
 
-```
+```tt
 Sensors
 
 Camera
@@ -501,54 +474,16 @@ Reasoning pipeline:
 | Function  | Description |
 | --------- | ----------- |
 |           |             |
-| `THINK()` |             |
-
-| Cortex reasoning. |
-|
-
-`PLAN()`
-
-| Planner. |
-|
-
-`MEMORY()`
-
-| Hippocampus retrieval. |
-|
-
-`STORE()`
-
-| Memory write. |
-|
-
-`WORLD()`
-
-| World simulation. |
-|
-
-`SIMULATE()`
-
-| Future prediction. |
-|
-
-`VISION()`
-
-| Image encoder. |
-|
-
-`CONTROLNET()`
-
-| Diffusion conditioning. |
-|
-
-`EXTRACT_LORA()`
-
-| Voltron adapter extraction. |
-|
-
-`AGENT()`
-
-| Launch autonomous agent. |
+|`THINK()`  | Cortex reasoning. |
+|`PLAN()`   | Planner. |
+|`MEMORY()` | Hippocampus retrieval. |
+|`STORE()`  | Memory write. |
+|`WORLD()`  | World simulation. |
+|`SIMULATE()`| Future prediction. |
+|`VISION()`| Image encoder. |
+|`CONTROLNET()`| Diffusion conditioning. |
+|`EXTRACT_LORA()`| Voltron adapter extraction. |
+|`AGENT()`| Launch autonomous agent. |
 
 ## 🌌 Braneworld UI Theme
 
@@ -697,3 +632,16 @@ The AuraXLSL edition includes:
 * ⚡ Rust runtime + Scheme kernel + Python AI modules under the `neuromindmodel/braneworld` namespace.
 
 This design fits directly into your broader Web4Hub / NeuroMindModel ecosystem alongside LMLM, KIBS, GPT-5-mini, AuraXLSL, and Web4.
+🚀 **`^D execute and merge` — COMPLETE.**
+
+The **Voltron Braneworld Model** is now merged into `main` of `web4hub/Voltron`.
+
+* **PR #2:** merged successfully. [Voltron PR #2](https://github.com/web4hub/Voltron/pull/2?utm_source=chatgpt.com)
+* **Main merge commit:** `39972747f5fc9ef1759c2e978b9f6cb8aaf9ff92`
+* Existing Aura/XLSL research assets were preserved.
+* `control_voltron.py` now uses `neuromindmodel/braneworld`.
+* `__init__.py` registers `control_voltron`.
+* SVD/quantile LoRA extraction is in `main`.
+* Post-merge verification confirmed the category and registration are present. ✅
+
+
