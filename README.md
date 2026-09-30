@@ -1,12 +1,29 @@
 # Voltron Braneworld Model - Aura Research Project Core
 
-A custom multi-brane intersecting framework implementation written in high-performance **Nim**, built to manage higher-dimensional metric tensors, eliminate singularities, and feed telemetry directly into the intelligent **`Aura.xlsl`** workbook platform.
+Voltron is the NeuroMindModel BrainWorld layer for the Aura research ecosystem. It combines the existing higher-dimensional braneworld research with a ComfyUI ControlNet -> LoRA exporter and an AuraXLSL workbook model.
 
-```bash
-git add .
-git commit -m "feat: initial commit of Voltron braneworld model and specs"
-git branch -M main
-git push -u origin main
-mkdir -p docs src
-git clone https://github.com/web4hub/Voltron.git
-cd Voltron
+## Namespace
+
+neuromindmodel/braneworld
+
+## AuraXLSL model
+
+The workbook layer is declarative: Observe -> Encode -> Retrieve -> Reason -> Plan -> Execute -> Store.
+
+Core concepts:
+
+- Cortex - reasoning and planning
+- Synapse - adapter and LoRA operations
+- Memory - persistent state and knowledge interfaces
+- Vision - perceptual conditioning
+- WorldModel - environment and state simulation
+
+The canonical workbook concepts are documented in workbook/Aura.xlsl.md and Voltron_spec.md.
+
+## ComfyUI
+
+control_voltron.py exposes the node category neuromindmodel/braneworld and converts compatible ControlNet/model weight deltas into rank-reduced LoRA tensors using SVD.
+
+## Repository
+
+This repository retains the existing Aura .xlsl, .xsim, Nim, simulation, telemetry, and research assets. The Braneworld runtime layer extends those assets rather than replacing them.
