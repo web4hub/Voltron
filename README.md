@@ -1,12 +1,7 @@
-# Voltron Braneworld Model - Aura Research Project Core
+# Voltron Braneworld
 
-A custom multi-brane intersecting framework implementation written in high-performance **Nim**, built to manage higher-dimensional metric tensors, eliminate singularities, and feed telemetry directly into the intelligent **`Aura.xlsl`** workbook platform.
+NeuroMindModel BrainWorld specification and ComfyUI ControlNet -> LoRA exporter.
 
-```bash
-git add .
-git commit -m "feat: initial commit of Voltron braneworld model and specs"
-git branch -M main
-git push -u origin main
-mkdir -p docs src
-git clone https://github.com/web4hub/Voltron.git
-cd Voltron
+Category: neuromindmodel/braneworld
+
+The canonical workbook is workbook/Braneworld.workbook.xlsl.

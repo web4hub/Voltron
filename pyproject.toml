@@ -1,0 +1,10 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "neuromindmodel-voltron"
+version = "1.0.0"
+description = "NeuroMindModel BrainWorld Voltron ComfyUI node"
+requires-python = ">=3.10"
+dependencies = ["torch", "safetensors"]

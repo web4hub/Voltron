@@ -1,0 +1,7 @@
+@workbook Synapse
+version 1.0.0
+namespace neuromindmodel.braneworld.synapse
+
+base = MODEL("controlnet")
+adapter = EXTRACT_LORA(base, rank=64)
+SAVE(adapter, format="safetensors")

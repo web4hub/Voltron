@@ -1,0 +1,20 @@
+@workbook Braneworld
+version 1.0.0
+engine NeuroMindModel
+namespace neuromindmodel.braneworld
+
+sheet Cortex
+sheet Synapse
+sheet Memory
+sheet Vision
+sheet WorldModel
+
+model Voltron
+runtime BrainWorld
+
+cell A1 = MODEL("Voltron")
+cell A2 = MEMORY("hippocampus")
+cell A3 = WORLD("state")
+cell B1 = THINK(A1, A2)
+cell B2 = PLAN(B1, A3)
+cell B3 = EXECUTE(B2)
