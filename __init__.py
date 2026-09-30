@@ -1,19 +1,21 @@
 import importlib
-import os
 
-node_list = [ #Add list of .py files containing nodes here
+node_list = [
     "control_voltron_create",
+    "control_voltron",
     "color_blend",
-    "image_nodes"
+    "image_nodes",
 ]
 
 NODE_CLASS_MAPPINGS = {}
 NODE_DISPLAY_NAME_MAPPINGS = {}
 
 for module_name in node_list:
-    imported_module = importlib.import_module(".{}".format(module_name), __name__)
+    try:
+        imported_module = importlib.import_module(f".{module_name}", __name__)
+    except ModuleNotFoundError:
+        continue
+    NODE_CLASS_MAPPINGS.update(getattr(imported_module, "NODE_CLASS_MAPPINGS", {}))
+    NODE_DISPLAY_NAME_MAPPINGS.update(getattr(imported_module, "NODE_DISPLAY_NAME_MAPPINGS", {}))
 
-    NODE_CLASS_MAPPINGS = {**NODE_CLASS_MAPPINGS, **imported_module.NODE_CLASS_MAPPINGS}
-    NODE_DISPLAY_NAME_MAPPINGS = {**NODE_DISPLAY_NAME_MAPPINGS, **imported_module.NODE_DISPLAY_NAME_MAPPINGS}
-
-__all__ = ['NODE_CLASS_MAPPINGS', 'NODE_DISPLAY_NAME_MAPPINGS']
+__all__ = ["NODE_CLASS_MAPPINGS", "NODE_DISPLAY_NAME_MAPPINGS"]
