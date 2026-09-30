@@ -1,0 +1,14 @@
+workbook Synapse version "0.1"
+namespace neuromindmodel.braneworld.synapse
+
+edge types = [causal, semantic, temporal, perceptual, procedural]
+
+synapse plasticity {
+  learning_rate 0.01
+  decay 0.001
+  normalization l2
+}
+
+fn connect(source, target, weight, kind="semantic") -> edge
+fn activate(node, signal) -> signal
+fn reinforce(edge, reward) -> edge
