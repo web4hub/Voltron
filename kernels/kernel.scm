@@ -1,0 +1,10 @@
+;; Voltron Braneworld kernel
+(define (voltron-run input)
+  (let* ((observation (observe input))
+         (tokens (encode observation))
+         (memories (retrieve tokens))
+         (hypotheses (reason tokens memories))
+         (plan (plan hypotheses))
+         (result (execute plan)))
+    (store tokens result)
+    result))
