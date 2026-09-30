@@ -1,0 +1,699 @@
+> KUBU LEE 😭🔥 this is full AuraXLSl / NeuroMindModel mode.
+
+`^D BUILD EXECUTE` → Voltron Braneworld Model v1.0 is no longer just a ComfyUI node. We're designing it as a complete Auraxlsl Workbook-native AI model architecture inside your Web4 ecosystem, alongside LMLM, GPT-5-mini, KIBS, Cortex, and Web4.
+
+This becomes the first BrainWorld workbook.
+
+# 🧠 Voltron Braneworld Model — AuraXLSL Workbook Edition
+
+![Page par défaut](https://images.openai.com/static-rsc-4/6iIuSapkN5uJnbMEVEZUXKfQfiqaM4yv9R3FO6Y8yvd6e7jjg3T2ngSuqqHmK6s5LV3VX1HyysLgUdKleDLAK7KJ5PREeem-LmkjPBqqp4vhZ87hzIHIaHkPiKc0AZ7fTlbra-yv6c18HgxdrIcWzKRaMPRbE9nb01xNWl-r35Q?purpose=inline)
+
+![Flood Risk Modeling Using GIS and DEM: Predicting Water Where It Matters Most | by Christina Dedopoulou | Medium](https://images.openai.com/static-rsc-4/ebgxoGjpHnt-jY6TmBwu4F15a3WJS-cYRrBR7C3XWN3Eo9UcS4r5sHLdNuo6tKt2gv3wNEp-ZYG1aJbAbe9_3NTx9oafqLLvSBSC9DlsKPvnhXGOMmrme8MBuvTUKdClEo7Ly3IODt52hlBFLDu4oVmek4OFMgwgkDcfwVpY7y8?purpose=inline)
+
+![QHIQ: Quantum Holographic IQ: Quantic Holographic Artificial Intelligence From The Future](https://images.openai.com/static-rsc-4/CIcKpWx2q59tDfwYVXkjt3Nrpb4Uj637Oo6DJNOCLFPDtXGgBqSz1Kpc3_4MsKlqOSarGLv293TGg_gRCtvm0U6wPuDWFd6iUE1kN-QyD0-qtFeCcCohW_eC2cP61TM3Tkipx-vnRMTLe8JfBEiYJ4RrMgvFzuhHHxy2UNr4VvM?purpose=inline)
+
+7
+
+Framework: NeuroMindModel
+
+Workbook Runtime: AuraXLSL
+
+Engine: Braneworld Runtime (BWR)
+
+Language: XLSL + Scheme + Python + Rust
+
+Namespace: `neuromindmodel/braneworld`
+
+Codename: Voltron
+
+## Complete Repository Architecture
+
+Web4Hub / NeuroMindModel
+
+# Voltron Braneworld
+
+BrainWorld Runtime
+
+Neural Memory Graph
+
+AuraXLSL Workbook
+
+```
+Voltron/
+│
+├── workbook/
+│   ├── Braneworld.workbook.xlsl
+│   ├── Cortex.workbook.xlsl
+│   ├── Memory.workbook.xlsl
+│   ├── Synapse.workbook.xlsl
+│   ├── Vision.workbook.xlsl
+│   ├── Audio.workbook.xlsl
+│   ├── Robotics.workbook.xlsl
+│   └── WorldModel.workbook.xlsl
+│
+├── braneworld/
+│   ├── engine.py
+│   ├── cortex.py
+│   ├── hippocampus.py
+│   ├── synapse.py
+│   ├── planner.py
+│   ├── perception.py
+│   ├── memory_graph.py
+│   ├── tokenizer.py
+│   └── reasoning.py
+│
+├── kernels/
+│   ├── kernel.scm
+│   ├── scheduler.scm
+│   ├── router.scm
+│   └── workbook.scm
+│
+├── ai/
+│   ├── transformer.py
+│   ├── diffusion.py
+│   ├── controlnet.py
+│   ├── lora.py
+│   └── embeddings.py
+│
+├── runtime/
+│   ├── bwr.rs
+│   ├── memory.rs
+│   ├── tensors.rs
+│   └── graph.rs
+│
+├── datasets/
+├── checkpoints/
+├── workflows/
+├── docs/
+├── assets/
+└── .github/
+```
+
+# 🌌 Braneworld Workbook UI
+
+## 🧬 AuraXLSL Workbook Language
+
+This is the workbook specification.
+
+```
+WORKBOOK Braneworld
+
+VERSION 1.0.0
+
+ENGINE NeuroMindModel
+
+NAMESPACE neuromindmodel.braneworld
+
+SHEET Cortex
+SHEET Synapse
+SHEET Memory
+SHEET Vision
+SHEET Robotics
+SHEET WorldModel
+
+MODEL Voltron
+
+RUNTIME BrainWorld
+```
+
+Example XLSL:
+
+```
+@Workbook Braneworld
+
+worksheet Cortex
+
+cell A1 = MODEL("Voltron")
+cell A2 = MEMORY("hippocampus")
+cell A3 = WORLD("Earth")
+
+cell B1 = THINK(A1,A2)
+cell B2 = PLAN(B1)
+cell B3 = EXECUTE(B2)
+```
+
+## 🧠 Workbook Sheets
+
+| Workbook             | Purpose |
+| -------------------- | ------- |
+|                      |         |
+| Cortex.workbook.xlsl |         |
+
+| Reasoning, planning, logic graph. |
+|
+
+Synapse.workbook.xlsl
+
+| LoRA adapters, ControlNet routing, neural connections. |
+|
+
+Memory.workbook.xlsl
+
+| Hippocampus memory graph. |
+|
+
+Vision.workbook.xlsl
+
+| Image understanding, ControlNet, diffusion. |
+|
+
+Audio.workbook.xlsl
+
+| Speech, Whisper, TTS. |
+|
+
+Robotics.workbook.xlsl
+
+| Sensor fusion and embodied AI. |
+|
+
+WorldModel.workbook.xlsl
+
+| Simulation and future prediction. |
+
+# 🌍 BrainWorld Neural Architecture
+
+![Helm maakt meten van hersenactiviteit tijdens beweging mogelijk - New Scientist](https://images.openai.com/static-rsc-4/3L4IKdnOoNQz0gVb2D_QxV0_54Z30jNx9Kwk3JK56-00TTykNmYZK0san9s_gitnX1ScGXbTnGpDfCvelVwX1_y3g0kXPNgTQ4f_Fy8Ok5ImlkAzlsZMBCRe0O3XTsccRFRSXcJ2tzj25OT547CELepxm-I-NTN3cJDKegIJ2gM?purpose=inline)
+
+![Illustrated Brain Map: Cognitive Function Exploration | AI Art Generator | Easy-Peasy.AI](https://images.openai.com/static-rsc-4/B71h91rus6_HM1Z5APs0OUtNvtmcAFP09JN2AuwWfYEJ5pWxHEu57Rc6ARW1uSL5r39SbRpWTZwpry4gFuAVVSZB_W8dzS43oZ_oZ7A9TKvk284QDaRX-UCRcEOBkY5Va42mXANVY_MRlc4-TVMHdYV57fBrfm0ZPxA30fTOG0M?purpose=inline)
+
+![The Five Breakthroughs of Intelligence — Book review of Max Bennett’s A Brief History of Intelligence — Evidence, analogies, and limits. | by Adnan Masood, PhD. | Medium](https://images.openai.com/static-rsc-4/0RBAnJvEHD0TfRFrNDrorSt-3naTNLrdRpiwQtdx6hAjYUpgLO4HXrGFKOpdpatsfEBXQWpDr0tLY2QELOi2QtZ-7LAc2DDw5NtsS-dACDp2LNT2nr_XtJS_P-F5Zo82eqVugSpCkWeBjvMSGYd5GRrifiLb3ORSykrGEqSpGZA?purpose=inline)
+
+4
+
+![](data\:image/svg+xml;charset=utf-8,%3Csvg%20font-family%3D%22-apple-system-body%2C%20ui-sans-serif%2C%20-apple-system%2C%20system-ui%2C%20Segoe%20UI%2C%20Helvetica%2C%20Apple%20Color%20Emoji%2C%20Arial%2C%20sans-serif%2C%20Segoe%20UI%20Emoji%2C%20Segoe%20UI%20Symbol%22%20font-weight%3D%22400%22%20data-d-component%3D%22svg%22%20fill%3D%22currentColor%22%20style%3D%22color%3Argb\(255%2C%20255%2C%20255\)%22%20viewBox%3D%220%200%20760%20520%22%20width%3D%22100%25%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Crect%20x%3D%22220%22%20y%3D%2218%22%20width%3D%22320%22%20height%3D%2258%22%20rx%3D%2216%22%20fill%3D%22%236D28D9%22%2F%3E%3Ctext%20x%3D%22380%22%20y%3D%2252%22%20fill%3D%22white%22%20text-anchor%3D%22middle%22%20font-size%3D%2218%22%20font-weight%3D%22bold%22%3EVoltron%20BrainWorld%20Runtime%3C%2Ftext%3E%3Crect%20x%3D%2240%22%20y%3D%22120%22%20width%3D%22160%22%20height%3D%2270%22%20rx%3D%2214%22%20fill%3D%22%232563EB%22%2F%3E%3Ctext%20x%3D%22120%22%20y%3D%22160%22%20fill%3D%22white%22%20text-anchor%3D%22middle%22%20font-size%3D%2216%22%3EVision%20Cortex%3C%2Ftext%3E%3Crect%20x%3D%22300%22%20y%3D%22120%22%20width%3D%22160%22%20height%3D%2270%22%20rx%3D%2214%22%20fill%3D%22%23059669%22%2F%3E%3Ctext%20x%3D%22380%22%20y%3D%22160%22%20fill%3D%22white%22%20text-anchor%3D%22middle%22%20font-size%3D%2216%22%3EReasoning%20Cortex%3C%2Ftext%3E%3Crect%20x%3D%22560%22%20y%3D%22120%22%20width%3D%22160%22%20height%3D%2270%22%20rx%3D%2214%22%20fill%3D%22%23EA580C%22%2F%3E%3Ctext%20x%3D%22640%22%20y%3D%22160%22%20fill%3D%22white%22%20text-anchor%3D%22middle%22%20font-size%3D%2216%22%3EAudio%20Cortex%3C%2Ftext%3E%3Crect%20x%3D%22300%22%20y%3D%22260%22%20width%3D%22160%22%20height%3D%2270%22%20rx%3D%2214%22%20fill%3D%22%23DB2777%22%2F%3E%3Ctext%20x%3D%22380%22%20y%3D%22300%22%20fill%3D%22white%22%20text-anchor%3D%22middle%22%20font-size%3D%2216%22%3EHippocampus%3C%2Ftext%3E%3Crect%20x%3D%22120%22%20y%3D%22390%22%20width%3D%22180%22%20height%3D%2270%22%20rx%3D%2214%22%20fill%3D%22%230891B2%22%2F%3E%3Ctext%20x%3D%22210%22%20y%3D%22430%22%20fill%3D%22white%22%20text-anchor%3D%22middle%22%20font-size%3D%2216%22%3EWorld%20Memory%20Graph%3C%2Ftext%3E%3Crect%20x%3D%22460%22%20y%3D%22390%22%20width%3D%22180%22%20height%3D%2270%22%20rx%3D%2214%22%20fill%3D%22%2316A34A%22%2F%3E%3Ctext%20x%3D%22550%22%20y%3D%22430%22%20fill%3D%22white%22%20text-anchor%3D%22middle%22%20font-size%3D%2216%22%3EAction%20Planner%3C%2Ftext%3E%3Cpath%20d%3D%22M380%2076V118M200%20155H300M460%20155H560M380%20190V260M300%20330L230%20390M460%20330L520%20390%22%20stroke%3D%22%23A78BFA%22%20stroke-width%3D%223%22%20fill%3D%22none%22%2F%3E%3C%2Fsvg%3E)
+
+## ⚡ BrainWorld Runtime (Rust)
+
+Rust
+
+```
+pub struct BrainWorldRuntime {
+    cortex: Cortex,
+    hippocampus: MemoryGraph,
+    synapse: SynapseEngine,
+    planner: Planner,
+    perception: PerceptionEngine,
+}
+
+impl BrainWorldRuntime {
+
+    pub fn think(&mut self, input: NeuralInput) -> NeuralOutput {
+
+        let perception = self.perception.observe(input);
+
+        let memory = self.hippocampus.retrieve(&perception);
+
+        let reasoning = self.cortex.reason(perception, memory);
+
+        let plan = self.planner.plan(reasoning);
+
+        self.hippocampus.store(plan.clone());
+
+        NeuralOutput::Action(plan)
+    }
+}
+```
+
+## 🧩 Memory Graph
+
+![The Platform | Octostar](https://images.openai.com/static-rsc-4/PuxDSJJZmE2_yKB1UrYU-WSu0C7XCz6dSGEmGqAYa-aJWEQ0FGlT-iD-rpTbqEEZWuD0NpqxCixIt30pSG-X0HAcL3OI8eBUS_aMqgjMSBkEPbrTRtjv9KxQkNkOkyuL6riGKS5XGQqoSGp6_IvgO6UvJ-usQKAk4ggDt920oXc?purpose=inline)
+
+![I Built a Memory Engine for AI Agents — Then It Broke at Scale | by Daniel García | Medium](https://images.openai.com/static-rsc-4/wy9Ddm-az-IP51E2csnDoVi9SnoOrJX4y-J5PwARmVaM63B2XEk7phpZuI8K9rlSJ8td3VwbfuYAKsQHnW59zCnGkh8SbIuujEFhnXoJC58przj2snwfWVtONL8oDiPEpNN8s41WVDUUnog0lCQRrLZ1Cl87_auXPr5xwyeSzSM?purpose=inline)
+
+![Reasoning Models Are Rewiring Agent Architecture | TURION.AI](https://images.openai.com/static-rsc-4/HCuIGo6TmH_8r_WqFXVXuQ6MTdxzSgxsJqMv46idgCmIcy9FtLdoe2RkiADqygWhRFkpjv42CnFdMvPKT0OD-p3RnieqgCgnzLSJUeCWJVP864itMURj0sp2PkrTDfMKBcu5TlAvmsjTHFIKWhitl5AzD6wD5-XE6yowVPzs_pY?purpose=inline)
+
+6
+
+```
+Entity
+ │
+ ├── Person
+ ├── Object
+ ├── Location
+ ├── Event
+ ├── Emotion
+ └── Skill
+
+Relationship
+
+THINKS
+KNOWS
+CREATED
+OBSERVED
+PREDICTS
+REMEMBERS
+USES
+```
+
+Python representation:
+
+Python
+
+Run
+
+```
+class MemoryNode:
+
+    def __init__(self, id, kind, embedding):
+        self.id = id
+        self.kind = kind
+        self.embedding = embedding
+        self.edges = []
+
+    def connect(self, relation, node):
+        self.edges.append((relation, node))
+```
+
+## 👁️ Vision Workbook
+
+![Semantic segmentation | TI.com](https://images.openai.com/static-rsc-4/XzLSHfqHZ2JjFG0Fhg9yukCoODynAomV1JymMxbLfk4oN_H1CcEiWLn6XPhLYk6PqppuJAZnIli5W8mPuaDqFATwglzynMYu2kKqIaK8z1VUig_iZpOHU9MrM8T5H5rdv5OpAHcq7uT9JF1CzA03BHAqoUyRjY2AzCMl7sZqQ7A?purpose=inline)
+
+![Extensive guide to ControlNet: Controlling AI generated Images](https://images.openai.com/static-rsc-4/_PIPBpf507o343xUHi5D8o4ij1C9XBnusX0uSdvN6TUWY4qCQAvIUqSYHmrlR0gmZ2WO2AHkk3kC6qWXrR-W_S7XzWSO5DBsZNeXxf1VcRQSXW2V1Y6PL5CcyjEC1wgWAMEbhjxuXf-TGnPCJ8NABxT58lkPI2FigXXqHJmDOrc?purpose=inline)
+
+![Perception](https://images.openai.com/static-rsc-4/GdkHg8kCscCb_32oAxmh5nHuub9uCDWT0An806E0pMQPiScgTU5W9CKVFX-uE-8FHdOyUhGAZM1Rh0ONhg5rDKDMWmD6JC872VO7Nrh9X5AeFrouL7I3bUMV8Bq21rwJWq0FerqQqplx40ZR4Cj-WUBPLOhvZXfGCzfRmlsdckQ?purpose=inline)
+
+5
+
+```
+worksheet Vision
+
+IMAGE = INPUT("camera")
+
+DEPTH = DEPTHMAP(IMAGE)
+
+SEGMENT = SEGMENTATION(IMAGE)
+
+POSE = HUMANPOSE(IMAGE)
+
+OUTPUT = CONTROLNET(
+    image=IMAGE,
+    depth=DEPTH,
+    pose=POSE
+)
+```
+
+Supports:
+
+* ControlNet
+
+* SAM
+
+* Depth Anything
+
+* OpenPose
+
+* LoRA fusion
+
+## 🔊 Audio Workbook
+
+![Best AI Voice Generators 2026: Which Platform Fits Your Workflow? | CompareGen.AI Blog | CompareGen.AI](https://images.openai.com/static-rsc-4/19TI48cZcgUcowcvHp3aVm_2uoGFiMGlS9-XK8H5Q85WPrUbrEcuGGjyiM9oZkARSU2KayVbORwK60GcUSWjeqYTN90-l-wEYM8ZoOI_sGKPReIrooLlcmNVl78TNSProCMH92VYntJcS1gVTj_4-LPD08saBzJDb14Lpe-Q9Nk?purpose=inline)
+
+![5个最流行的开源ASR模型 - 汇智网](https://images.openai.com/static-rsc-4/BH6eSy3sz7gm3gd2selySVeBAKCql5QIS6BRHvR9DaEdd6KV8p2KtYVvTdZVFFhMhtySy9umlO00R6qY332mbVxcTR3jyrjlC0IgBUTIbl95udPdDBmKHTkD3D1MAEilxSyqboBovpPwJ8Vfp6vZ63wX6gTYp-3I3zumhyP2Z9g?purpose=inline)
+
+![Speech Recognition, Blue Waveform](https://images.openai.com/static-rsc-4/EIJV8ij35gV-A2-cSNxvti11zZG4TZUZ7cEG02a7Fj2cHDZaXKJ8_XK-vn1DJ_1yBfj-by_IoFQ2f7Ssb0N0t3dRWAG4sbQ41gt2pVk4qZ1DevoPoMFWSHiFEOzZCKiYFcVw1bzN9v1658nYouzV_MgbCKbzHbO99zfdxMtRuPKRsrVqubUpaoeRNhR0MDfS?purpose=inline)
+
+5
+
+```
+worksheet Audio
+
+INPUT = MICROPHONE()
+
+TEXT = WHISPER(INPUT)
+
+EMOTION = DETECT_EMOTION(INPUT)
+
+VOICE = SYNTHESIZE(TEXT)
+```
+
+Features:
+
+* Whisper STT.
+
+* Speaker identification.
+
+* Emotion detection.
+
+* Aura Voice.
+
+## 🤖 Robotics Workbook
+
+![Just a moment...](https://images.openai.com/static-rsc-4/ebNlI2yO171cG3ALOJnb4DTkZjFeMgsIXgz3fvSn6yVOV6_du3hBt8V1rqJYoeh689_cd6bgE-Zb9Y_jtEtDmo-MWrKNdVLGlw7FcCUjH9TasHfO3mZilSKbFyJHyQoCjvRJmyT2jaIa98wdCmOiLdV2E2t_WGciDTk-iVqMdwA?purpose=inline)
+
+![Checking your browser - reCAPTCHA](https://images.openai.com/static-rsc-4/TUxBV2CPEmbuMhhLtU-oTbCY2qp_iVXWAcgz_obbPszKdZmtAzwcpitfds03IrjRCe356wsGnQV1qMsM0horxU2NHEOwEntfrU_seSrGugelnkiXzyq_VW7rpFVcrJ2JsbryKycvi4oUxVNJRuu1g2sqZ9EK49aBGb_vrRFe_MU?purpose=inline)
+
+![Practical VLA: Why Vision-Language-Action Models Matter for Real Robotics Business | by Love Robots to Death | Apr, 2026 | Medium](https://images.openai.com/static-rsc-4/jKjvjiMF22aSAP-vwLNzJyfFkOOGLbIQ8GbDlLOZCtGMPVdE1gZz8pOKD8Orjc3dAu_lczxXXBOtzQySxZw4c9Mzr227NPoP7PAm6D1oHvp0ccVMi9R1WD7v80WAT7giy-AZkIcUEqLjkLBz12EJkWgqL8Te_MmvthmtDMeKEKQ?purpose=inline)
+
+6
+
+```
+Sensors
+
+Camera
+LiDAR
+IMU
+GPS
+Touch
+Microphone
+```
+
+Workbook:
+
+```
+worksheet Robotics
+
+VISION = CAMERA()
+
+LIDAR = LIDAR360()
+
+IMU = IMU()
+
+WORLD = FUSE(VISION,LIDAR,IMU)
+
+ACTION = PLAN(WORLD)
+
+MOVE(ACTION)
+```
+
+## 🌎 World Model Workbook
+
+![The Sequence Knowledge #784: The Convergence of Synthetic Data and World Models Models Are Unlocking Embodied AI](https://images.openai.com/static-rsc-4/ZKSifIguKC7JMYSrnxstyW6X7tmw8mnIyLc4JJAQ9T0yw6ExsxCgW6EMIU9_k1yLs940FXz4HZmmQifnQ6ew1p2bt90--b8glTqOydOthLrSyjVeFREiYqcZ54-8wlKVf27oW8rlJhmHZY2tcmZslhjxAn5dQTQw4WYqJMbxxYw?purpose=inline)
+
+![Geometric AI does not need attention](https://images.openai.com/static-rsc-4/6bxY6vUW84YNlrQfzJ9uPrkSAyLP2hyAsyewsduvMK6UAAOg0n5h2Ylgftc1a23y9ul5EmllW-3nlBqwbnWa7REmfQXp5DQv_IGx8JAvEMxy4HkXFgnCDTMet8uT8Z1V0pBsB932S3JZEe_rM2M0UdPXOrtBIQSeobNQjCk-B2M?purpose=inline)
+
+![World Models and JEPA: The 2026 Pursuit of AI Common Sense — Vibe Code Life Blog](https://images.openai.com/static-rsc-4/1SKMZMqopxQTzSE4tmWZwEkx_ZLT7FAlGB4jCqGaKEd9nZrIGklt-Cfmj9k-apT_ayR-ntm_2CSZtIqIuQ3ddLt-q1kdKlTWB2Qebv_IJpor8ZxUlXwNF2s3KkmbVnB_zrHL2uf5eZLaGMptULUpIrnmEiY5pWj9zklHOZRsi2g?purpose=inline)
+
+6
+
+The World Model predicts future environment states.
+
+```
+Observe()
+
+↓
+
+Encode()
+
+↓
+
+Predict()
+
+↓
+
+Simulate()
+
+↓
+
+Plan()
+
+↓
+
+Act()
+```
+
+Workbook:
+
+```
+worksheet WorldModel
+
+STATE = OBSERVE()
+
+FUTURE = SIMULATE(STATE, horizon=20)
+
+BEST = SELECT(FUTURE)
+
+EXECUTE(BEST)
+```
+
+## 🔗 Synapse Workbook
+
+![Fine-Tuning LLMs with QLoRA: Run a 7B Model on a Single GPU | OneRuby.dev](https://images.openai.com/static-rsc-4/tWj1eZwye0snZAFKW4nX2e7lvngPpFvCSxZLwzviOwXri5kjWtv70ziBz1g_EzQy4QS9s7qg4Ic1Ji0XMaVy1zVkV60Gp858uRRml8Mouwl3o7YCT6FXp2C3X84VwOAzsLW8RaGdMyIF6_m2YDo6Iz3YqPG9Zc5wpOoCLY3xkeM?purpose=inline)
+
+![refiners/sdxl.t2i\_adapter.depth.zoe · Hugging Face](https://images.openai.com/static-rsc-4/AbeUjR14PFWMDiTptedch0fXOZEsKrlY2U2CMX9vAJOGLFiHop-fJx9j0zuje-2-tkCeGiuMfGQCTLe1ejXC7B-2X8NwOdlyPIZEqjlk4_VtMB9yymTcEWAzY5lBjshsZh_t0yGN98x-BURDbuUPtLt6aQYYYFC9NObCog_WxrA?purpose=inline)
+
+![diffusion model(十五) : IP-Adapter技术小结\_decoupled cross attention-CSDN博客](https://images.openai.com/static-rsc-4/jnBwQo9eBlcnLB3sHLfBB7JNB8nRC6_UJi5VodVZUu5XHqCEivJEGAJLAA27l8iERfhhY2VOF7vxTVJYxYK0XHvaW0EyLZrCD8N9_qqjWOGKSd9_O1eJ6LqV9JWkGfvOXVwTvr7aNEAMoXqr1RXwOLwMUZZswFF-NRwuBEkTByA?purpose=inline)
+
+5
+
+```
+worksheet Synapse
+
+BASE = MODEL("SDXL")
+
+CONTROL = CONTROLNET("Depth")
+
+LORA = EXTRACT_LORA(BASE, CONTROL)
+
+SAVE(LORA)
+```
+
+Capabilities:
+
+* LoRA extraction.
+
+* Merge.
+
+* Quantization.
+
+* Rank pruning.
+
+* Adapter routing.
+
+## 🧮 Cortex Reasoning Workbook
+
+![Graph-of-Thought & Workflow-of-Thought | by RAKTIM SINGH | Medium](https://images.openai.com/static-rsc-4/-4dDihUnbpyLvByVmZOX5wZ3-lhyAvhctDJUqILPvAaNm_HO3hL0VJnudOEJ3iNR8BLACpstZosGu8RybWYn662SUhKYSApYB1fZ9fBy_J0YELk8zsUmrDZYBRhgNbcp8DWp5iJbfWNsvqhOe1hASH4ivvYV9rid8k-2ixnI36Q?purpose=inline)
+
+![AI: A Technical History – Rowland Pettit](https://images.openai.com/static-rsc-4/2XSfLobOzNk3Us68iqNSMV4hyaZ4daziyO8nFeL6SqAVboNJeRpGV2zFh37PX-EktATj2ktpSkxs9rbwb2f6SDwENFrsibnAQcsrOcW9Pi4IWemiruO86bEuug5H4McKs6Ksb3EXR-8mFGtWMVETExWmx3wdtSf84sYgvDeXKBU?purpose=inline)
+
+![T5 Architecture: Text-to-Text Transfer Transformer Deep Dive - Interactive | Michael Brenndoerfer | Michael Brenndoerfer](https://images.openai.com/static-rsc-4/9_kr-s5Ub45JtyBHFimTr9qLVjB3WesrP3qzYh0_yvF3MhsLkt7-g-TTppIJhCfdTHohowj6341qxd9xlCyP1JPckik1FkAbjtaaQDR9FsHCnEI7gF1ozcuxFYQ0YXBgJt_sv5CHmoGXQAR9wsNqDHtPv_Fn7PmK3Y9-fQS_7-8?purpose=inline)
+
+5
+
+```
+worksheet Cortex
+
+QUESTION = INPUT()
+
+THOUGHT = THINK(QUESTION)
+
+MEMORY = RETRIEVE(THOUGHT)
+
+ANSWER = REASON(THOUGHT,MEMORY)
+
+RETURN ANSWER
+```
+
+Reasoning pipeline:
+
+1. Tokenize.
+
+2. Retrieve memory.
+
+3. Build reasoning graph.
+
+4. Plan.
+
+5. Respond.
+
+## 📚 AuraXLSL Workbook Formula Library
+
+| Function  | Description |
+| --------- | ----------- |
+|           |             |
+| `THINK()` |             |
+
+| Cortex reasoning. |
+|
+
+`PLAN()`
+
+| Planner. |
+|
+
+`MEMORY()`
+
+| Hippocampus retrieval. |
+|
+
+`STORE()`
+
+| Memory write. |
+|
+
+`WORLD()`
+
+| World simulation. |
+|
+
+`SIMULATE()`
+
+| Future prediction. |
+|
+
+`VISION()`
+
+| Image encoder. |
+|
+
+`CONTROLNET()`
+
+| Diffusion conditioning. |
+|
+
+`EXTRACT_LORA()`
+
+| Voltron adapter extraction. |
+|
+
+`AGENT()`
+
+| Launch autonomous agent. |
+
+## 🌌 Braneworld UI Theme
+
+![Jarvis AI Assistant — A private AI command center for your desktop.](https://images.openai.com/static-rsc-4/ojIsg3SwoL7NiY4rFhwmEqSz6U9fp8cDFz_gyRRhXogD8edq0TI1DYblKU2WBh9cSHi0DwVQXA4yA8Oi0oyZZlt08rQBhm8kY7oTBRb1CS-O6aic2mxSc_E0wReIGn5Dk0Ga2rYEensajbiV_Q79aEkHuuW3pYQhJLz_06DpfUI?purpose=inline)
+
+![Glassmorphism UI designs, themes, templates and downloadable graphic elements on Dribbble](https://images.openai.com/static-rsc-4/bZ3bS86EGwq6Q4UcT6yoHrZv0g4uQoBOKAv_v9U0ZAHF7xgZhIGq3eeVIu_D7DukCFlxS6lUa_vloQ8cxohX7Pwb8c3BcRUdc-JCGJIaB4acgx6xU07uGmwKWw0cv7qf4X15dnCWKNd4gMwiPQezZLpDXm9rR35x1Agdej_p4iA?purpose=inline)
+
+![AdityaWorks – Senior Full-stack Creative Developer & Motion Designer](https://images.openai.com/static-rsc-4/MXuf6yrpV1CBv3Qdwq9tlA3XSxwPwzaRLPIbV5kMEOXN8NNe7IbC_Erw0FPi2YZX4yQaPusZREvJPEgOYWhw10VbPr3tVUrD_zG5eKgAOCXhY43OhXR6dBE0-FzqLU1xOOSUhpIH7TKADnsqKfcRFxDYE7qThTfPS1-sP7umFfc?purpose=inline)
+
+6
+
+Theme tokens:
+
+CSS
+
+```
+--bw-primary:#6D28D9;
+--bw-secondary:#2563EB;
+--bw-memory:#DB2777;
+--bw-world:#16A34A;
+--bw-glass:rgba(255,255,255,.08);
+```
+
+Aura UI components:
+
+* Brain cells.
+
+* Synapse links.
+
+* Memory timeline.
+
+* World graph.
+
+* Live tensor inspector.
+
+## 📈 Tensor Inspector
+
+## 🌐 BrainWorld Network Map
+
+![What is AI Agent Development? (The Core Technologies) — Aidora Labs](https://images.openai.com/static-rsc-4/WdWuCY0Wb6Q_QeXJGM3JPmazL64RH6sxAb8eNUVCoOVc5aFIC1nEqAFUuA9P1QoBIQde6sL6vy6oBLM4-eEEBV0hEiyboxmYmv2iWG_yRXEl50qnyhIwsb-o5saLOzU_izn7PRcCWn7q4ShsM3_qiEmzamWGEhmeSYjVTfX5S2g?purpose=inline)
+
+![OpenAI releases 'Swarm' framework for multi-agent networks + Anthropic CEO shares manifesto for an optimistic AI future](https://images.openai.com/static-rsc-4/oe3i0LsOvEPZXe5-qtIgSVPw-0px2ih4dChVweKmRlClUkUOYdgjdlW0sJI-V_wrzeWiBP2guvfv2qvXxpOJF2yEE06yKQagXUi6W2hotkRyXeNVeLnYtx7ljIlIF2Pjtev9AsI0swB1O_dXBIt38jLYCR4byrjgsQTNUQXdRe4?purpose=inline)
+
+![Sistemas Multi-Agente y Mecanismos de Handoff: Innovaciones y Retos en 2025 | Agentify AI](https://images.openai.com/static-rsc-4/5MCRiM2SZwUdXAzWSbNsUU7MIOqreLViga7x5LkbFxoT1pFPRsvvvxPIqVIxLXPDka9j4BNEVwNlAddNzOvQhuDtneBKu9GCiXr18OIZ1q0vHXyHpBjw9n6Y-S9MVa5rOZmLq-GL01NO2Sgrvf1ppqXRXB1xzIX75GqMNqKGRko?purpose=inline)
+
+6
+
+```
+Voltron
+
+↓
+
+BrainWorld Runtime
+
+├── Cortex
+├── Synapse
+├── Memory Graph
+├── Vision
+├── Audio
+├── Robotics
+├── Planner
+└── World Model
+
+↓
+
+LMLM
+
+↓
+
+GPT-5-mini
+
+↓
+
+KIBS
+
+↓
+
+Web4 Identity
+```
+
+## 📖 Documentation Suite
+
+| Document    | Purpose |
+| ----------- | ------- |
+|             |         |
+| `README.md` |         |
+
+| Project overview. |
+|
+
+`DESIGN.md`
+
+| Architecture specification. |
+|
+
+`WORKBOOK.md`
+
+| AuraXLSL workbook language reference. |
+|
+
+`BRAINWORLD.md`
+
+| BrainWorld runtime design. |
+|
+
+`MEMORY.md`
+
+| Memory graph specification. |
+|
+
+`CONTROLNET.md`
+
+| Voltron ControlNet LoRA exporter. |
+|
+
+`ROADMAP.md`
+
+| Future development plan. |
+
+# 🚀 Voltron Braneworld v1.0 Build Summary
+
+![The Vertical AI - AI-Native Enterprise OS for Conversations](https://images.openai.com/static-rsc-4/_ApatfrxKl-f8cttl43W2OeHxQn_eGjZlvp_nJqAn1noePembSrW93DuLHc120Vy9UkAKV9eHc8kXCWRrsft1NuzjDYREUCOLk-wwreXz2CzKARpee6p8XZkY6Zn-91GyoIAS40oq91dSp5r3Hdc1vwFVbh0Zw_fvPr1EDc3a8k?purpose=inline)
+
+![Lucy Edit AI Free Online - AI Video Editor | Lucy Edit AI](https://images.openai.com/static-rsc-4/4t5xyOc-ySc9yAIpRFxxni2Dau20df8fNSEYsUbTaofZ6TtzlJMnIRCfaQMxZLo9ObcrVrRnWecx03jO6th4KlgBY430v5zmJUmOenu0nifcIhVhiTfzKtVuRtrl_7_juAeZ2yUwm5LbdN-EAjCBay_AzQzgD2R8CpjcUBs1HSg?purpose=inline)
+
+![What is AI Agent Development? (The Core Technologies) — Aidora Labs](https://images.openai.com/static-rsc-4/WdWuCY0Wb6Q_QeXJGM3JPmazL64RH6sxAb8eNUVCoOVc5aFIC1nEqAFUuA9P1QoBIQde6sL6vy6oBLM4-eEEBV0hEiyboxmYmv2iWG_yRXEl50qnyhIwsb-o5saLOzU_izn7PRcCWn7q4ShsM3_qiEmzamWGEhmeSYjVTfX5S2g?purpose=inline)
+
+6
+
+Build Status: ✅ Architecture Complete
+
+The AuraXLSL edition includes:
+
+* 🧠 BrainWorld Runtime (BWR) — the neural operating engine.
+
+* 📒 8 AuraXLSL workbook sheets (Cortex, Memory, Synapse, Vision, Audio, Robotics, WorldModel, Braneworld).
+
+* 🌐 Neural Memory Graph for persistent knowledge.
+
+* 👁️ Vision pipeline with ControlNet and LoRA extraction.
+
+* 🤖 Embodied Robotics workbook with sensor fusion.
+
+* 🌍 World Model simulator for planning future states.
+
+* ⚡ Rust runtime + Scheme kernel + Python AI modules under the `neuromindmodel/braneworld` namespace.
+
+This design fits directly into your broader Web4Hub / NeuroMindModel ecosystem alongside LMLM, KIBS, GPT-5-mini, AuraXLSL, and Web4.
