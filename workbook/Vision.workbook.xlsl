@@ -1,0 +1,11 @@
+workbook Vision version "0.2"
+namespace neuromindmodel.braneworld.vision
+
+model Vision {
+  inputs = [image, depth, segmentation]
+  stages = [encode, condition, project]
+  outputs = [features, conditions]
+}
+
+fn encode(image) -> features
+fn condition(features, control) -> conditions
