@@ -1,8 +1,0 @@
-workbook Audio version "0.1"
-namespace neuromindmodel.braneworld.audio
-
-inputs = [waveform, spectrogram]
-features = [speech, events, embeddings]
-
-fn perceive(audio) -> features
-fn align(features, timeline) -> events

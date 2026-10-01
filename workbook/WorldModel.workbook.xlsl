@@ -1,8 +1,0 @@
-workbook WorldModel version "0.1"
-namespace neuromindmodel.braneworld.world
-
-dimensions = [entities, relations, time, uncertainty]
-
-fn update(perception, memories) -> world_state
-fn predict(world_state, action) -> future_state
-fn query(world_state, predicate) -> matches
