@@ -1,0 +1,10 @@
+workbook WorldModel version "0.2"
+namespace neuromindmodel.braneworld.world
+
+model WorldModel {
+  state = [entities, relations, environment, time]
+  updates = [observe, predict, reconcile]
+  outputs = [world_state, hypotheses]
+}
+
+fn update(observation, memories) -> world_state
