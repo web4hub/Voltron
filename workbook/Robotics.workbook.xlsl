@@ -1,0 +1,14 @@
+workbook Robotics version "0.1"
+namespace neuromindmodel.braneworld.robotics
+
+inputs = [lidar, imu, joints, camera]
+outputs = [trajectory, action]
+
+safety {
+  require finite_state
+  require bounded_action
+}
+
+fn observe(sensor_frame) -> state
+fn plan(state, goal) -> trajectory
+fn act(trajectory) -> action

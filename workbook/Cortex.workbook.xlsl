@@ -1,0 +1,13 @@
+workbook Cortex version "0.1"
+namespace neuromindmodel.braneworld.cortex
+
+model Cortex {
+  inputs  = [text, image, audio, telemetry]
+  stages  = [normalize, attend, reason, emit]
+  outputs = [features, hypotheses, decisions]
+}
+
+fn normalize(x) -> signal
+fn attend(signal, context) -> features
+fn reason(features, memory) -> hypotheses
+fn emit(hypotheses) -> decisions
