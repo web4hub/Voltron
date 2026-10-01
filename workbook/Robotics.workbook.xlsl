@@ -1,0 +1,11 @@
+workbook Robotics version "0.2"
+namespace neuromindmodel.braneworld.robotics
+
+model Robotics {
+  inputs = [lidar, imu, joints, commands]
+  stages = [sense, localize, plan, actuate]
+  outputs = [state, trajectory, command]
+}
+
+fn sense(sensor_frame) -> state
+fn plan(state, goal) -> trajectory

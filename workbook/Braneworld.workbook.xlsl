@@ -1,0 +1,26 @@
+workbook Braneworld version "0.2"
+namespace neuromindmodel.braneworld
+
+module perception source "../braneworld/perception.py"
+module tokenizer source "../braneworld/tokenizer.py"
+module cortex source "../braneworld/cortex.py"
+module memory source "../braneworld/hippocampus.py"
+module synapse source "../braneworld/synapse.py"
+module planner source "../braneworld/planner.py"
+module reasoning source "../braneworld/reasoning.py"
+module executor source "../braneworld/engine.py"
+module world source "WorldModel.workbook.xlsl"
+
+pipeline Observe -> Encode -> Retrieve -> Reason -> Plan -> Execute -> Store
+
+entry run(input) {
+  observation = perception.observe(input)
+  tokens = tokenizer.encode(observation)
+  memories = memory.retrieve(tokens)
+  features = cortex.process(observation, memories)
+  hypotheses = reasoning.infer(features, memories)
+  plan = planner.plan(hypotheses, features)
+  result = executor.execute(plan)
+  memory.store({input: observation, result: result, features: features})
+  return result
+}

@@ -1,0 +1,11 @@
+workbook Audio version "0.2"
+namespace neuromindmodel.braneworld.audio
+
+model Audio {
+  inputs = [waveform, spectrogram]
+  stages = [frame, encode, fuse]
+  outputs = [features, events]
+}
+
+fn frame(audio) -> frames
+fn encode(frames) -> features

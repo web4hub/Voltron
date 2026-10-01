@@ -1,0 +1,10 @@
+workbook Synapse version "0.2"
+namespace neuromindmodel.braneworld.synapse
+
+synapse Semantic {
+  weight = bounded(-1.0, 1.0)
+  reinforcement = reward * rate
+}
+
+fn activate(signal, weight) -> output
+fn reinforce(weight, reward, rate) -> next_weight
