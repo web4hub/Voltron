@@ -1,7 +1,7 @@
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM,gemma_lm
 
-model_name = "web4hub/voltron"  # or WebWorld-14B, WebWorld-32B ,WebWorld-8B
+model_name = "neuromindmodel/braneworld"  # or WebWorld-14B, WebWorld-32B ,WebWorld-8B
 tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
 model = AutoModelForCausalLM.from_pretrained(
     model_name,
@@ -11,7 +11,7 @@ model = AutoModelForCausalLM.from_pretrained(
 ).eval()
 
 system_prompt = (
-    "You are a web world model. I will provide you with an initial page state "
+    "You are a  brayne world web model. I will provide you with an initial page state "
     "and a sequence of actions. For each action, predict the resulting page state.\n"
     "Strictly maintain the original format. Output only the full page state "
     "without explanations, code, or truncation."
