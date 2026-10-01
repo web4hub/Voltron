@@ -1,0 +1,11 @@
+workbook Memory version "0.2"
+namespace neuromindmodel.braneworld.memory
+
+memory Hippocampus {
+  capacity = 128
+  retrieval = token_overlap
+  ordering = descending_score
+}
+
+fn store(item) -> memory_id
+fn retrieve(tokens) -> memories
