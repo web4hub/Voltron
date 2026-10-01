@@ -1,9 +1,0 @@
-workbook Vision version "0.1"
-namespace neuromindmodel.braneworld.vision
-
-inputs = [image, video, depth, lidar]
-features = [objects, regions, motion, geometry]
-
-fn perceive(input) -> features
-fn track(previous, current) -> tracks
-fn project(features, world) -> observations

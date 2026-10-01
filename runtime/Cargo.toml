@@ -1,7 +1,0 @@
-[package]
-name = "voltron-braneworld-runtime"
-version = "0.1.0"
-edition = "2021"
-
-[lib]
-path = "bwr.rs"
