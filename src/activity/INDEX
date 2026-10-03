@@ -1,0 +1,30 @@
+BCIspeed                Animal speed data
+BCItime                 Animal record time of day data
+activity                Animal activity statistics
+actmod-class            Activity model class.
+bwcalc                  Calculate circular kernel bandwidth.
+cmean                   Circular mean
+compareAct              Compare activity level estimates
+compareCkern            Compare circular distributions.
+compareTimes            Compare activity between times of day
+density2                Modified kernel density function
+dvmkern                 Circular kernel probability density function.
+dvonm                   von Mises density function
+fitact                  Fit activity model to time-of-day data
+fitlincirc              Linear-circular regression
+get_suntimes            Calculates solar event times
+gettime                 Convert time of day data to numeric
+lincircKern             Linear-circular kernel fit
+lincircmod-class        An S4 class describing linear-circular
+                        relationships.
+ovl4                    Index of overlap between circular
+                        distributions.
+plot.actmod             Plot activity distribution
+plot.lincircmod         Plot linear-circular relationship
+redf                    Random numbers from empirical distribution
+                        function.
+solartime               Transforms clock time to solar time anchored to
+                        sun rise and sunset times for a given location.
+transtime               Transforms clock time to solar times.
+trigmolen               title trigonometric moment length
+wrap                    Wraps data on a given range.
