@@ -1,3 +1,4 @@
+[![Validate Voltron Braneworld](https://github.com/web4hub/Voltron/actions/workflows/validate-braneworld.yml/badge.svg)](https://github.com/web4hub/Voltron/actions/workflows/validate-braneworld.yml)
 # Voltron Braneworld Model - Aura Research Project Core
 
 Voltron is the NeuroMindModel BrainWorld layer for the Aura research ecosystem. It combines the existing higher-dimensional braneworld research with a ComfyUI ControlNet -> LoRA exporter and an AuraXLSL workbook model.
